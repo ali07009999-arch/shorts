@@ -1,0 +1,66 @@
+# DEMO: 5 ta foydali odat. Nusxa olib, o'zingiz uchun o'zgartiring.
+format: reels            # reels | shorts | youtube | square | post
+fps: 30
+
+voice:
+  engine: mms            # mms (oflayn) | edge (eng yaxshi, internet kerak) | gtts
+  lang: uz
+  gender: male           # edge uchun: male | female
+  speed: 1.05
+
+music:
+  file: generate         # yoki: assets/music/mening_trekim.mp3
+  mood: lofi             # generate uchun: calm | lofi | upbeat | epic
+  volume: 0.22
+  duck: 0.35             # gapirilganda musiqa shu darajaga pasayadi
+
+captions:
+  enabled: true
+  timing: whisper        # whisper (aniq) | even (taxminiy, tez)
+  style:
+    position: bottom     # bottom | center | top
+    uppercase: true
+    highlight: "#FFD400"
+
+theme:
+  font: Montserrat-ExtraBold
+  text_color: "#FFFFFF"
+  accent: "#FFD400"
+
+transition: fade         # fade | slide | zoom | flash | none
+progress_bar: true
+watermark: "@kanal_nomi"
+
+scenes:
+  - bg: "gradient:#1a2a6c,#b21f1f,#fdbb2d"
+    title: "Hayotingizni o'zgartiradigan *5 ta odat*"
+    say: "Hayotingizni o'zgartiradigan beshta oddiy odat. Oxirigacha ko'ring!"
+
+  - bg: "gradient:#0f2027,#203a43,#2c5364"
+    title: "1. Erta *turish*"
+    subtitle: "Kuningizni rejalashtirishga vaqt qoladi"
+    say: "Birinchi odat: erta turish. Ertalabki bir soat butun kuningizni belgilaydi."
+
+  - bg: "gradient:#134e5e,#71b280"
+    title: "2. Kitob *o'qish*"
+    subtitle: "Kuniga atigi 10 sahifa"
+    say: "Ikkinchi odat: har kuni kamida o'n sahifa kitob o'qing."
+    anim: slide
+
+  - bg: "gradient:#42275a,#734b6d"
+    title: "3. *Sport*"
+    subtitle: "20 daqiqa ham yetarli"
+    say: "Uchinchi odat: har kuni yigirma daqiqa jismoniy mashq qiling."
+
+  - bg: "gradient:#000428,#004e92"
+    title: "4. Telefonni *kamaytirish*"
+    say: "To'rtinchi odat: telefonda o'tkazadigan vaqtingizni kamaytiring."
+    anim: slide
+
+  - bg: "gradient:#f12711,#f5af19"
+    title: "5. *Shukr* qilish"
+    say: "Beshinchi odat: har kuni kechqurun bor narsangiz uchun shukr qiling."
+
+  - bg: "gradient:#232526,#414345"
+    title: "Obuna bo'ling *va* do'stlaringizga yuboring!"
+    say: "Video foydali bo'lsa, obuna bo'ling va do'stlaringizga yuboring!"
